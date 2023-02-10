@@ -1,0 +1,25 @@
+{
+    "name": "thinkawitch/janus-php-api",
+    "type": "library",
+    "description": "PHP API for Janus gateway",
+    "keywords": ["janus", "janus gateway", "api"],
+    "license": "unlicense",
+    "authors": [
+        {
+            "name": "Andrew Sinkevitch",
+            "email": "andrew.sinkevitch@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Thinkawitch\\JanusApi\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.1",
+        "ext-json": "*",
+        "symfony/http-client": "^6.1"
+    }
+}
