@@ -27,7 +27,7 @@ trait JanusHttpRequestTrait
     {
         $options = [];
         if ($data) {
-            if (strlen($this->apiSecret)) {
+            if (!empty($this->apiSecret)) {
                 $data['apisecret'] = $this->apiSecret;
             }
             $options = ['json' => $data];
